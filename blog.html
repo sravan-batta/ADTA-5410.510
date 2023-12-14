@@ -14,7 +14,7 @@
     </header>
     
     <section>
-        <h2>Exploratory Data Analysis (EDA) with R</h2>
+        <h2>Topic 1: Exploratory Data Analysis (EDA) with R</h2>
         <article>
             <p>
                 Exploratory Data Analysis (EDA) is a critical phase in data analysis that involves summarizing the
@@ -28,29 +28,17 @@
                 purchases, and we want to understand the distribution of purchase amounts.
             </p>
 
-            <h3>The Thought Process</h3>
+            <h3>Thought Process</h3>
             <p>
                 Before diving into code, it's essential to define our goals. In this case, we aim to visualize the
                 distribution of purchase amounts to identify any patterns or outliers that may require further
                 investigation.
             </p>
 
-            <h3>Data Analysis Code Snippet</h3>
-            <pre>
-<code>
-# Load necessary libraries
-library(ggplot2)
-
-# Read the dataset (replace 'your_data.csv' with your actual file)
-data <- read.csv("sample_data.csv")
-
-# Create a histogram to visualize the distribution of purchase amounts
-ggplot(data, aes(x=purchase_amount)) +
-  geom_histogram(binwidth=50, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
-  labs(title="Distribution of Purchase Amounts", x="Purchase Amount", y="Frequency") +
-  theme_minimal()
-</code>
-            </pre>
+            <h3>Data Analysis Code Snippet & Visualization</h3>
+            <p>
+                <img src="Sravan_Photo.jpeg" alt="Professional Picture" width="150" height="200">
+            </p>
 
             <h3>The Solution</h3>
             <p>
@@ -66,10 +54,50 @@ ggplot(data, aes(x=purchase_amount)) +
             </p>
         </article>
     </section>
+    <br></br>
+    <section>
+        <h2>Topic 2: Linear Regression in R</h2>
+        <article>
+            <p>
+                Linear Regression is a statistical method that models the relationship between a dependent variable and
+                one or more independent variables. In this blog post, we'll explore the concept of Linear Regression
+                using R and visualize the results.
+            </p>
+
+            <h3>The Problem</h3>
+            <p>
+                Imagine you have a dataset containing information about the hours students spend studying and their
+                exam scores. The problem is to understand the relationship between study hours and exam scores and
+                predict scores based on study hours.
+            </p>
+
+            <h3>Thought Process</h3>
+            <p>
+                Before delving into code, it's crucial to define our goals. We want to determine if there's a linear
+                relationship between study hours and exam scores. Linear Regression is a suitable method for this
+                type of analysis.
+            </p>
+
+            <h3>Data Analysis Code Snippet</h3>
+            <p>
+                <img src="Sravan_Photo.jpeg" alt="Professional Picture" width="150" height="200">
+            </p>
+
+            <h3>The Solution</h3>
+            <p>
+                The scatter plot with the linear regression line provides a visual representation of the relationship
+                between study hours and exam scores. The slope and intercept of the line can be used to make
+                predictions.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                Linear Regression is a powerful tool for understanding and predicting relationships between
+                variables. By interpreting the results of the regression analysis, we can make informed decisions
+                and predictions based on data.
+            </p>
+        </article>
+    </section>
 </body>
-
-<footer>
-        <p>&copy; 2023 Sravan Kumar Batta. All Rights Reserved.</p>
-</footer>
-
+    
 </html>
