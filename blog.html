@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sravan Kumar Batta's Resume</title>
+    <title>Sravan's Blog on EDA</title>
 </head>
 
 <body>
@@ -14,10 +14,56 @@
     </header>
     
     <section>
-        <h2>Blog</h2>
+        <h2>Exploratory Data Analysis (EDA) with R</h2>
         <article>
-            <h3>Topic: Exploratory Data Analysis (EDA) in R</h3>
-            <p>Code snippets and analysis narrative go here...</p>
+            <p>
+                Exploratory Data Analysis (EDA) is a critical phase in data analysis that involves summarizing the
+                main characteristics of a dataset. In this blog post, we'll walk through the process of EDA using R,
+                focusing on data visualization.
+            </p>
+
+            <h3>The Problem</h3>
+            <p>
+                Let's consider a hypothetical scenario where we have a dataset containing information about customer
+                purchases, and we want to understand the distribution of purchase amounts.
+            </p>
+
+            <h3>The Thought Process</h3>
+            <p>
+                Before diving into code, it's essential to define our goals. In this case, we aim to visualize the
+                distribution of purchase amounts to identify any patterns or outliers that may require further
+                investigation.
+            </p>
+
+            <h3>Data Analysis Code Snippet</h3>
+            <pre>
+<code>
+# Load necessary libraries
+library(ggplot2)
+
+# Read the dataset (replace 'your_data.csv' with your actual file)
+data <- read.csv("sample_data.csv")
+
+# Create a histogram to visualize the distribution of purchase amounts
+ggplot(data, aes(x=purchase_amount)) +
+  geom_histogram(binwidth=50, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
+  labs(title="Distribution of Purchase Amounts", x="Purchase Amount", y="Frequency") +
+  theme_minimal()
+</code>
+            </pre>
+
+            <h3>The Solution</h3>
+            <p>
+                The generated histogram will provide insights into the distribution of purchase amounts. Analyzing the
+                histogram, we can identify common purchase amounts and spot any anomalies or unexpected patterns.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                EDA is a powerful tool for gaining a preliminary understanding of your data. By combining visualization
+                techniques with thoughtful analysis, you can uncover valuable insights that guide further steps in your
+                data analysis journey.
+            </p>
         </article>
     </section>
 </body>
